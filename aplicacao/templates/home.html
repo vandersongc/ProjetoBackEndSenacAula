@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
 
 </head>
 <body>
     <header class="header">
         <h1>Página Inicial</h1>
-        
+
     <nav>
         <a href="{% url 'produtos'%}">Ir para Produtos</a>
         <a href="{% url 'clientes'%}">Ir para Clientes</a>
